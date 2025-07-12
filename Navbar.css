@@ -1,0 +1,76 @@
+/* ===== Navbar Base ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 1610px;
+  height: 50px;
+  background: transparent; /* Transparent at the top */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2.5rem;
+  z-index: 1000;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ===== Navbar After Scroll ===== */
+.navbar-scrolled {
+  background: #2a2a2a; /* Dark background after scrolling */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Logo Section ===== */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-section:hover {
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  transform: scale(0.96);
+}
+
+.logo-img {
+  height: 40px;
+  width: auto;
+}
+
+/* ===== Navigation Links ===== */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  transition: color 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+
+/* Text color when at the top */
+.nav-links.top-links a {
+  color: #2a2a2a;
+}
+
+/* Text color when scrolled */
+.nav-links.scrolled-links a {
+  color: white;
+}
+
+/* General nav link styles */
+.nav-links a {
+  text-decoration: none;
+  border-bottom: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for all links */
+.nav-links a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+/* Optional: special effect for clickable buttons */
+.object:hover {
+  transform: scale(0.96);
+}
