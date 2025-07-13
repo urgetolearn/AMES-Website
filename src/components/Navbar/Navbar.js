@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo3.png';
 import { scrollToAboutSection } from '../About/About';
-import { scrollToUpdatesSection } from '../updates/updates'; 
+import { scrollToUpdatesSection } from '../updates'; 
 import { scrollToContactSection } from '../Contact/contacts';
 
 const Navbar = () => {

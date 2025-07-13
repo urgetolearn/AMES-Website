@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import HomePage from './components/HomePage/Homepage';      
 import About from './components/About/About';
-import Updates from './components/updates/updates';
+import Updates from './components/updates';
 import Contact from './components/Contact/contacts';
 
 function App() {
