@@ -1,78 +1,278 @@
 .about-section {
-  scroll-margin-top: 80px;  /* Adjust based on your navbar height */
-  padding: 4rem 2rem;
-  background: #f4f4f4;
-  text-align: center;
+  scroll-margin-top: 80px;
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  color: #fff;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-  max-width: 1000px;
+  width: 100%;
+  max-width: 1800px; /* Add this line */
+  box-sizing: border-box;
   margin: 0 auto;
 }
 
-/* Decorative background element */
-.about-section::before {
-  content: "";
-  position: absolute;
-  top: -40px;
-  right: -40px;
-  width: 150px;
-  height: 80px;
-  background: rgba(247, 132, 43, 0.15);
-  border-radius: 50%;
-  z-index: 0;
+.about-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
 }
 
-
-.about-section::after {
-  content: "";
-  position: absolute;
-  bottom: -60px;
-  left: -60px;
-  width: 200px;
-  height: 200px;
-  background: rgba(247, 132, 43, 0.1);
-  border-radius: 50%;
-  z-index: 0;
+.about-text {
+  flex: 1;
+  text-align: left;
+  max-width: 440px;
 }
 
-.about-section h2 {
-  font-size: 2.5rem;
-  color: #2a2a2a;
-  position: relative;
-  z-index: 1;
-  margin-bottom: 1rem;
-}
-
-.about-section h2::after {
-  content: '';
+.about-us-label {
+  font-size: 1rem;
+  color: #fff;
+  opacity: 0.8;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
   display: block;
-  width: 80px;
-  height: 4px;
-  background-color: #f7842b;
-  margin: 0.5rem auto;
-  border-radius: 2px;
 }
 
-.about-section p {
-  font-size: 1.1rem;
-  color: #3d3d3d;
-  line-height: 1.7;
-  max-width: 800px;
-  margin: 1rem auto;
-  z-index: 1;
-  position: relative;
-  transition: color 0.3s ease;
+.about-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
 }
 
-.about-section p:hover {
-  color: #222;
+.about-desc {
+  font-size: 1.08rem;
+  margin-bottom: 1.5rem;
+  opacity: 0.88;
+  line-height: 1.6;
 }
 
-.nav-button {
-  background: none;
+.about-btn {
+  background: #f7842b;
+  color: #fff;
   border: none;
-  color: inherit;
-  font: inherit;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
   cursor: pointer;
-  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+  margin-top: 0.5rem;
 }
+
+.about-btn:hover {
+  background: #d96c1a;
+}
+
+.about-image img {
+  
+  max-width: none;
+  min-width: 700px;
+  height: 380px;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  
+}
+
+.about-image2 img {
+  width: calc(100% - 40px); /* Reduce width from right */
+  max-width: none;
+  min-width: 700px;
+  height: 380px;
+  border-radius: 5px;
+  object-fit: cover;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-right: 40px; /* Add margin to reduce from right */
+}
+
+
+.about-text ul {
+  padding-left: 1.2rem;
+  margin: 0 ;
+  opacity: 0.88;
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.about-text ul li {
+  margin-bottom: 0.5rem;
+}
+
+.about-text {
+  margin: 1.5rem;
+  margin-left: calc(1.5rem - 20px);
+}
+
+.alumni-section {
+  margin-top: 4rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  text-align: center;
+}
+
+.alumni-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 35px;
+  justify-items: center;
+}
+
+.alumni-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1rem;
+}
+
+.alumni-card {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.5s ease-in;
+
+}
+.alumni-name {
+  margin-top: 0.5rem;
+  background-color: #2a2a2a;
+  border : 2.5px solid #f7842b;
+  border-radius: 35px;
+  padding: 6px ;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #f7842b;
+  
+}
+
+.alumni-intro {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+
+.alumni-card:hover .alumni-intro {
+  opacity: 1;
+  visibility: visible;
+}
+
+.alumni-card:hover{
+  transition: background-color 0.3s ease-in;
+  background-color: #f7842b;
+}
+
+.alumni-role{
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.special-alumni-card {
+  background-color: #f7842b;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: flex-start; 
+  text-align: left; 
+  position: relative;
+  overflow: hidden;
+ 
+}
+
+.special-alumni-card:hover {
+  background-color: #f7842b;
+}
+
+
+.alumni-intro.always-show {
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: #fff;
+}
+
+
+.special-alumni-name {
+  background-color: #fff;
+  color: #f7842b;
+  border: 2px solid #fff;
+}
+.special-alumni-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  margin-left: 2rem;
+}
+.alumni-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #fff;
+  height: 320px;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Show icon on hover */
+.alumni-card:hover .icon {
+  opacity: 1;
+}
+.icon.img:hover{
+  transform: scale(1.1);
+}
+.icon img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+

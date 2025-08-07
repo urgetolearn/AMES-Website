@@ -26,15 +26,16 @@
   gap: 0.5rem;
 }
 
-.logo-section:hover {
-  border: 3px solid rgba(255, 255, 255, 0.5);
-  transform: scale(0.96);
-}
-
 .logo-img {
   height: 40px;
   width: auto;
+  transition: transform 0.3s ease;
 }
+.logo-img:hover {
+  transform: scale(1.05);
+}
+
+
 
 /* ===== Navigation Links ===== */
 .nav-links {
@@ -66,8 +67,8 @@
 
 /* Hover effect for all links */
 .nav-links a:hover {
-  color: white;
-  text-decoration: none;
+  color: #f8742b;
+  transition: color 0.3s ease;
 }
 
 /* Optional: special effect for clickable buttons */

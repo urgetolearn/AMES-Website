@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo3.png';
-import { scrollToAboutSection } from '../About/About';
-import { scrollToUpdatesSection } from '../updates'; 
+import { scrollToAboutSection, scrollToObjectivesSection } from '../About/About';
 import { scrollToContactSection } from '../Contact/contacts';
 
 const Navbar = () => {
@@ -10,7 +9,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 50); // Set true when scrolled more than 50px
+            setScrolled(window.scrollY > 50); 
         };
 
         window.addEventListener('scroll', handleScroll);
@@ -38,18 +37,17 @@ const Navbar = () => {
                 </li>
                 <li>
                     <a
-                        href="/updates"
-                        className="object nav-button"
+                        href="#objectives"
+                        className="object"
                         onClick={(e) => {
                             e.preventDefault();
-                            scrollToUpdatesSection();
+                            scrollToObjectivesSection();
                         }}
                     >
-                        Updates
+                        Projects
                     </a>
                 </li>
-                <li><a className="object" href="#gallery">Projects</a></li>
-                <li><a className="object" href="#contact">Team</a></li>
+                <li><a className="object" href="#event">Events</a></li>
                 <li>
                     <a
                         href="/contacts"
