@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import logo from '../../assets/logo3.png';
-import { scrollToAboutSection, scrollToObjectivesSection } from '../About/About';
-import { scrollToContactSection } from '../Contact/contacts';
+import { scrollToAboutSection} from '../About/About';
+import { scrollToFooterSection } from '../Footer/footer';
+import { scrollToEventSection } from '../Events/EventsSection';
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
     return (
         <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
             <div className="logo-section">
-                <img src={logo} alt="AMES Logo" className="logo-img" />
+                <a href='/'><img src={logo} alt="AMES Logo" className="logo-img" /></a>
             </div>
             <ul className={`nav-links ${scrolled ? 'scrolled-links' : 'top-links'}`}>
                 <li><a className="object" href="/">Home</a></li>
@@ -36,25 +37,20 @@ const Navbar = () => {
                     </a>
                 </li>
                 <li>
-                    <a
-                        href="#objectives"
-                        className="object"
+                    <a href="#" className='object'>Projects</a>
+                </li>
+                <li><a className="object nav-button" href="/Event"  
                         onClick={(e) => {
                             e.preventDefault();
-                            scrollToObjectivesSection();
-                        }}
-                    >
-                        Projects
-                    </a>
-                </li>
-                <li><a className="object" href="#event">Events</a></li>
+                            scrollToEventSection();
+                        }}>Events</a></li>
                 <li>
                     <a
-                        href="/contacts"
+                        href="/Footer"
                         className="object nav-button"
                         onClick={(e) => {
                             e.preventDefault();
-                            scrollToContactSection();
+                            scrollToFooterSection();
                         }}
                     >
                         Contact

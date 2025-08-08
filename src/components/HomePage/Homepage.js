@@ -5,6 +5,9 @@ import Contact from '../Contact/contacts';
 import './Homepage.css';
 import bannerImage from '../../assets/banner2.jpg';
 import visionIcon from '../../assets/vision.png';
+import Footer from '../Footer/footer';
+const year = new Date().getFullYear();
+
 
 
 const HomePage = () => {
@@ -21,7 +24,7 @@ const HomePage = () => {
 
                     <div className="overlay-text">
                         Association Of Mechanical Engineering Students(AMES)
-                        <span className="below-part">National Institute of Technology Karnataka(NITK)</span>
+                        <span className="below-part1">National Institute of Technology Karnataka(NITK)</span>
                         <span className="moto">Connecting gears of innovation across generations</span>
                     </div>
                 </div>
@@ -97,9 +100,22 @@ const HomePage = () => {
             }} /></div>
 
             <About />
+            <Contact />
             <footer className="footer" id="contact">
-                <Contact />
+                <Footer />
             </footer>
+            <div style={{ paddingLeft: '140px', paddingRight: '140px' }}><hr style={{
+                border: 'none',
+                height: '2px',
+                borderTop: '2px dashed #f7842b',
+                margin: '0px 0 0px 0',
+                paddingBottom: '27px'
+            }} ></hr></div>
+            <div className="footer-bottom">
+                <span className="footer-text">© {year} AMES. All rights reserved.</span>
+                <a href='#'><span className="footer-text2">Privacy Policy</span></a>
+                <a href='#'><span className="footer-text3">Terms of Service</span></a>
+                </div>
         </div>
     );
 };

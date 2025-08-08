@@ -59,7 +59,7 @@
 
 
 
-.below-part {
+.below-part1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -118,13 +118,36 @@
     font-size: 1rem;
     line-height: 1.6;
 }
-
-
-
-/* Footer */
-.footer {
-    background-color: #2a2a2a;
-    color: white;
-    padding: 2rem;
-    text-align: center;
+.footer-text{
+    opacity: 0.3;
+    color: #fff;
+    text-align: left;
+    position: relative;
+    bottom: 20px;
+    left: 139px;
 }
+.footer-text2{
+    opacity: 0.3;
+    color: #fff;
+    position: relative;
+    bottom: 20px;
+    left: 1010px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.footer-text2:hover{
+    color: #f7842b;
+}
+.footer-text3{
+    opacity: 0.3;
+    color: #fff;
+    position: relative;
+    bottom: 20px;
+    left: 1050px;
+    text-decoration: none;
+}
+.footer-text3:hover{
+    color: #f7842b;
+}
+
+

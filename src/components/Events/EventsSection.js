@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useRef } from "react";
 import eventsData from "../../data/eventsData.js";
 import "./EventsSection.css";
 
+let scrollToEventSection = () => { };
 const AUTO_NEXT_INTERVAL = 4000; // 4 seconds
 
 const EventsSection = () => {
@@ -22,10 +23,18 @@ const EventsSection = () => {
     setBarKey((k) => k + 1);
   };
 
+  const eventRef = useRef(null);
+
+  useEffect(() => {
+    scrollToEventSection = () => {
+      eventRef.current?.scrollIntoView({ behavior: 'smooth' });
+    };
+  }, []);
+
   return (
-    <div className="featured-projects-nitk">
+    <div className="featured-projects-nitk" ref={eventRef}>
       <div className="fp-content-left">
-        <div className="fp-header">Featured Events</div>
+        <div className="fp-header" >Featured Events</div>
         <div className="fp-desc">
           NITK instituted the Alumni Awards to recognize the exemplary
           achievements of its former students.
@@ -89,4 +98,5 @@ const EventsSection = () => {
   );
 };
 
+export { scrollToEventSection };
 export default EventsSection;

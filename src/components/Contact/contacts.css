@@ -1,209 +1,117 @@
-.contact-section {
-  background: linear-gradient(to right, #2a2a2a, #111111);
-  color: #f4f4f4;
-  padding: 4rem 2rem 2rem;
-  text-align: center;
-}
-
-.contact-columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 3rem;
-  margin-bottom: 2rem;
-}
-
-.contact-block {
-  flex: 1 1 200px;
-  min-width: 200px;
-}
-
-.contact-block h4 {
-  color: #f7842b;
-  font-size: 1.2rem;
-  border-bottom: 2px solid #f7842b;
-  display: inline-block;
-  margin-bottom: 1rem;
-  padding-bottom: 0.2rem;
-}
-
-.contact-block ul {
-  list-style: none;
-  padding: 0;
-}
-
-.contact-block li {
-  margin: 0.5rem 0;
-}
-
-.contact-block a {
-  color: #ddd;
-  text-decoration: none;
-}
-
-.contact-block a:hover {
-  color: #f7842b;
-}
-
-.contact-block p {
-  color: #ccc;
-  line-height: 1.5;
-}
-
-.socials {
-  margin-top: 2rem;
-  border-top: 1px solid #333;
-  padding-top: 2rem;
-}
-
-.socials .icons a {
-  margin: 0 0.8rem;
-  font-size: 1.5rem;
-  color: #f7842b;
-  text-decoration: none;
-}
-
-.credits {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: #999;
+.page1{
+  height: 470px;
 }
 .media-section {
   position: relative;
   width: 100%;
-  height: 300px; /* adjust height */
+  height: 450px;
   overflow: hidden;
+  margin-bottom: 48px;
 }
 
 .media-image-wrapper {
+  position: relative;
   width: 100%;
   height: 100%;
-  position: relative;
-  z-index: 0; /* image is at bottom */
 }
 
-.hero-image {
+.media-image {
   width: 100%;
-  height: 100%;
+  height: 450px;
   object-fit: cover;
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
 
-/* Dark overlay for contrast */
-.media-section::before {
-  content: "";
+.media-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1; /* above image, below text */
-}
-
-/* Text above everything */
-.overlay-text {
-  position: absolute;
-  top: 20%;
-  left: 5%;
-  color: white;
-  z-index: 2; /* highest */
-}
-
-.main-heading {
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.below-part {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 12px;
-}
-
-.media-links {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.media-link a {
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  transition: color 0.3s ease;
-}
-
-.media-link a:hover {
-  color: #f7842b;
-}
-.media-section {
-  position: relative;
-  width: 100%;
-  height: 300px; /* adjust height as needed */
-  overflow: hidden;
-}
-
-.hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* darkens the image */
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0.7) 100%
+  );
+  filter: brightness(0.3);
   z-index: 1;
+  pointer-events: none;
 }
 
-.overlay-text {
+/* Text on top */
+.media-overlay-text {
   position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
-  color: #2a2a2a;
-  z-index: 2; /* above image + overlay */
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  color: white;
+  pointer-events: auto;
+  
+  
+
 }
 
 .main-heading {
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
+  font-size: 1rem;
+  margin-bottom: 12px;
+  text-align: left;
+  position: relative;
+  left: 200px;
 
-.underline {
-  height: 3px;
-  width: 50px;
-  background: #f7842b;
-  margin: 8px 0 16px 0;
-  border-radius: 2px;
 }
 
 .below-part {
-  font-size: 20px;
   font-weight: bold;
+  position: relative;
+  
+  font-size: 2.5rem;
+  letter-spacing: 1.2px;
+  left: 195px;
   margin-bottom: 12px;
 }
 
-.media-links {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.media-link a {
+.media-link1 a {
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 0 10px;
+  
+  position: relative;
   text-decoration: none;
-  color: white;
-  font-size: 16px;
-  transition: color 0.3s ease;
+  left: 182px;
+  
 }
 
-.media-link a:hover {
-  color: #f7842b;
+.media-link2 a {
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 0 10px;
+  
+  position: relative;
+  text-decoration: none;
+  left: 182px;
+  top: 5px;
+  
+}
+
+.media-link3 a {
+  color: #fff;
+  font-size: 1.1rem;
+  margin: 0 10px;
+  
+  position: relative;
+  text-decoration: none;
+  left: 182px;
+  top: 10px;
+  
+}
+
+
+
+#contact.footer {
+  padding: 0;
 }

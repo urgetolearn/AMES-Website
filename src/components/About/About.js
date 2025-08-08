@@ -6,20 +6,17 @@ import alumniData from '../../data/alumniData';
 import instaIcon from '../../assets/instaicon.png';
 import Linkedin from '../../assets/linkedin.png'
 import EventsSection from '../Events/EventsSection';
+import Contact from '../Contact/contacts';
 
 let scrollToAboutSection = () => { };
-let scrollToObjectivesSection = () => { };
+
 
 const About = () => {
   const aboutRef = useRef(null);
-  const objectivesRef = useRef(null);
 
   useEffect(() => {
     scrollToAboutSection = () => {
       aboutRef.current?.scrollIntoView({ behavior: 'smooth' });
-    };
-    scrollToObjectivesSection = () => {
-      objectivesRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
   }, []);
 
@@ -41,7 +38,7 @@ const About = () => {
         </div>
       </div>
       {/* Second Row: Objectives */}
-      <div className="about-content-wrapper" ref={objectivesRef} style={{ marginTop: "2.5rem" }}>
+      <div className="about-content-wrapper"  style={{ marginTop: "2.5rem" }}>
         <div className="about-image2">
           <img src={objectivesImage} alt="Classroom" />
         </div>
@@ -113,5 +110,5 @@ const About = () => {
   );
 }
 
-export { scrollToAboutSection, scrollToObjectivesSection };
+export { scrollToAboutSection };
 export default About;

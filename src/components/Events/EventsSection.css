@@ -3,13 +3,13 @@
   min-height: 500px;
   background: #2a2a2a;
   color: #fff;
-  font-family: 'Inter', 'Roboto', Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3.5rem 0 4rem 0;
   gap: 0;
   box-sizing: border-box;
+  
 }
 
 .fp-content-left {
