@@ -68,3 +68,142 @@
   font-size: 0.9rem;
   color: #999;
 }
+.media-section {
+  position: relative;
+  width: 100%;
+  height: 300px; /* adjust height */
+  overflow: hidden;
+}
+
+.media-image-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 0; /* image is at bottom */
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dark overlay for contrast */
+.media-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1; /* above image, below text */
+}
+
+/* Text above everything */
+.overlay-text {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  color: white;
+  z-index: 2; /* highest */
+}
+
+.main-heading {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.below-part {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.media-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.media-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.media-link a:hover {
+  color: #f7842b;
+}
+.media-section {
+  position: relative;
+  width: 100%;
+  height: 300px; /* adjust height as needed */
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* darkens the image */
+  z-index: 1;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: #2a2a2a;
+  z-index: 2; /* above image + overlay */
+}
+
+.main-heading {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.underline {
+  height: 3px;
+  width: 50px;
+  background: #f7842b;
+  margin: 8px 0 16px 0;
+  border-radius: 2px;
+}
+
+.below-part {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.media-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.media-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.media-link a:hover {
+  color: #f7842b;
+}

@@ -20,8 +20,9 @@ const HomePage = () => {
                     </div>
 
                     <div className="overlay-text">
-                        Association Of Mechanical <span className="centered-part">Engineering Students</span>
-                        <span className="below-part">Building the future through excellence in Mechanical engineering</span>
+                        Association Of Mechanical Engineering Students(AMES)
+                        <span className="below-part">National Institute of Technology Karnataka(NITK)</span>
+                        <span className="moto">Connecting gears of innovation across generations</span>
                     </div>
                 </div>
             </section>

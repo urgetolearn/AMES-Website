@@ -1,89 +1,89 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import eventsData from "../../data/eventsData.js";
 import "./EventsSection.css";
 
+const AUTO_NEXT_INTERVAL = 4000; // 4 seconds
+
 const EventsSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  const [direction, setDirection] = useState("down"); 
+  const [barKey, setBarKey] = useState(0);
 
-  const handlePrev = () => {
-    if (activeIndex > 0) {
-      setDirection("up");
-      setActiveIndex(activeIndex - 1);
-    }
-  };
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setActiveIndex((prev) => (prev + 1) % eventsData.length);
+      setBarKey((k) => k + 1);
+    }, AUTO_NEXT_INTERVAL);
 
-  const handleNext = () => {
-    if (activeIndex < eventsData.length - 1) {
-      setDirection("down");
-      setActiveIndex(activeIndex + 1);
-    }
+    return () => clearTimeout(timer);
+  }, [activeIndex]);
+
+  const handleClick = (idx) => {
+    setActiveIndex(idx);
+    setBarKey((k) => k + 1);
   };
 
   return (
-    <div className="events-section-vertical-animated">
-      <div className="events-content-vertical-animated">
-        {eventsData.map((event, idx) => (
-          <div
-            key={event.title}
-            className={`event-content-animated ${
-              idx === activeIndex
-                ? direction === "down"
-                  ? "slide-in-down"
-                  : "slide-in-up"
-                : "hidden"
-            }`}
-          >
-            <div className="calendar-label">CALENDAR</div>
-            <div style={{ height: '3px', width: '50px', background: '#f7842b', margin: '8px 0 16px 0', borderRadius: '2px' }} />
-            <h1 className="events-title">Our Events</h1>
-            <div className="event-title">{event.title}</div>
-            {event.details && (
-              <div className="event-details">{event.details}</div>
-            )}
-            <button className="know-more">Know More</button>
-          </div>
-        ))}
+    <div className="featured-projects-nitk">
+      <div className="fp-content-left">
+        <div className="fp-header">Featured Events</div>
+        <div className="fp-desc">
+          NITK instituted the Alumni Awards to recognize the exemplary
+          achievements of its former students.
+        </div>
+        <div className="fp-projects-list">
+          {eventsData.map((project, idx) => (
+            <div
+              key={project.title}
+              className={`fp-project-title${activeIndex === idx ? " active" : ""}`}
+              onClick={() => handleClick(idx)}
+              tabIndex={0}
+              role="button"
+            >
+              <span className="fp-bullet">&#8226;</span>
+
+              <div className="title-details">
+                <div className="title"><span>{project.title}</span></div>
+
+                {activeIndex === idx && (
+                  <div className="fp-project-details">
+                    <div className="fp-project-description">{project.details}</div>
+                    <a
+                      href="#"
+                      className="fp-read-more-btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      READ MORE <span aria-hidden="true">↗</span>
+                    </a>
+                    <div className="fp-progress-bar-container">
+                      <div className="fp-progress-label"></div>
+                      <div className="fp-progress-bar">
+                        <div
+                          key={barKey}
+                          className="fp-progress-bar-inner"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
-      
-      <div className="event-controls-vertical">
-        <span
-          className={`event-symbol-vertical${activeIndex === 0 ? " disabled" : ""}`}
-          onClick={handlePrev}
-          tabIndex={0}
-          role="button"
-          aria-label="Previous"
-        >
-          –
-        </span>
-        <span
-          className={`event-symbol-vertical${activeIndex === eventsData.length - 1 ? " disabled" : ""}`}
-          onClick={handleNext}
-          tabIndex={0}
-          role="button"
-          aria-label="Next"
-        >
-          +
-        </span>
-      </div>
-
-     
-      <div className="events-image-vertical-animated">
-        {eventsData.map((event, idx) => (
+      <div className="fp-content-right">
+        {eventsData[activeIndex].image ? (
           <img
-            key={event.title}
-            src={event.image || "https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=800&q=80"}
-            alt={event.title}
-            className={`events-image-animated ${
-              idx === activeIndex
-                ? direction === "down"
-                  ? "slide-in-down"
-                  : "slide-in-up"
-                : "hidden"
-            }`}
+            src={eventsData[activeIndex].image}
+            alt={eventsData[activeIndex].title}
+            className="fp-project-image"
           />
-        ))}
+        ) : (
+          <div className="fp-project-image fp-image-placeholder">
+            No Image Available
+          </div>
+        )}
       </div>
     </div>
   );

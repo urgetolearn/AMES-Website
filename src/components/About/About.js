@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import './About.css';
-import aboutImage from '../../assets/about.png';
-import objectivesImage from '../../assets/objective (2).png';
+import aboutImage from '../../assets/about.JPG';
+import objectivesImage from '../../assets/department.png';
 import alumniData from '../../data/alumniData';
 import instaIcon from '../../assets/instaicon.png';
 import Linkedin from '../../assets/linkedin.png'
