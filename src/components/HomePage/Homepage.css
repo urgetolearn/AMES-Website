@@ -150,4 +150,153 @@
     color: #f7842b;
 }
 
+/* Tablet and larger phones */
+@media (max-width: 1024px) {
+  .overlay-text {
+    font-size: 2.5rem;
+  }
+  
+  .below-part1 {
+    font-size: 1.2rem;
+  }
 
+  .moto {
+    font-size: 1rem;
+  }
+  
+  .info-cards-section {
+    flex-direction: column;
+    align-items: center;
+    bottom: 50px;
+  }
+  
+  .info-card {
+    width: 80%;
+  }
+
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .footer-text, .footer-text2, .footer-text3 {
+    position: static;
+    margin: 5px 0;
+    left: auto;
+    bottom: auto;
+    opacity: 1; /* Make links more visible on smaller screens */
+  }
+
+  .footer-text2, .footer-text3 {
+    margin-left: 0;
+  }
+  
+  hr {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .banner-container {
+    height: 700px;
+  }
+
+  .overlay-text {
+    font-size: 2rem;
+  }
+
+  .below-part1 {
+    font-size: 1rem;
+    line-height: 2;
+  }
+
+  .moto {
+    font-size: 0.9rem;
+    line-height: 2;
+  }
+
+  .info-cards-section {
+    padding: 1rem;
+    bottom: 30px;
+  }
+  
+  .info-card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+  
+  .info-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .info-card p {
+    font-size: 0.9rem;
+  }
+}
+/* iPhone SE, S8+ */
+@media (max-width: 375px) {
+  .overlay-text {
+    font-size: 1.5rem;
+  }
+  .below-part1 {
+    font-size: 0.9rem;
+  }
+  .moto {
+    font-size: 0.8rem;
+  }
+  .info-card {
+    width: 95%;
+  }
+}
+
+/* iPhone XR/12 Pro, Pixel 7 */
+@media (max-width: 414px) {
+  .overlay-text {
+    font-size: 1.8rem;
+  }
+  .below-part1 {
+    font-size: 1rem;
+  }
+  .moto {
+    font-size: 0.9rem;
+  }
+}
+
+/* iPhone 14 Pro Max */
+@media (max-width: 430px) {
+  .overlay-text {
+    font-size: 2rem;
+  }
+}
+
+/* iPad Mini (Portrait) */
+@media (max-width: 768px) {
+  .info-cards-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info-card {
+    width: 80%;
+  }
+}
+
+/* Surface Pro 7 */
+@media (max-width: 912px) {
+  .info-cards-section {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .info-card {
+    width: 45%;
+  }
+}
+
+/* Nest Hub */
+@media (max-width: 1024px) {
+  /* Existing tablet queries are sufficient for this size */
+}

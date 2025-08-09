@@ -75,3 +75,130 @@
 .object:hover {
   transform: scale(0.96);
 }
+
+/* Tablet and larger phones */
+@media (max-width: 1024px) {
+  .navbar {
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-section {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 0.5rem 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-links a:hover {
+    background-color: #f8742b;
+    color: #2a2a2a;
+  }
+
+  /* Adjustments for the scrolled state on mobile */
+  .navbar-scrolled .nav-links a {
+    color: white;
+  }
+  
+  .navbar-scrolled .nav-links a:hover {
+    color: black;
+  }
+}
+/* Mobile phones (general) */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    height: auto;
+  }
+  .logo-section {
+    margin-bottom: 0.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .nav-links a {
+    padding: 0.5rem 0;
+  }
+}
+
+/* iPad Mini (Portrait) */
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 10px;
+  }
+}
+/* iPad Pro (Portrait and Landscape) */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column; /* Stack items vertically */
+    height: auto;
+    padding: 1.5rem 2rem;
+    align-items: center; /* Center the logo and links */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+/* Landscape orientation for wider tablets like iPad Pro */
+@media (min-width: 1025px) and (max-width: 1366px) {
+  .navbar {
+    padding: 1rem 5rem; /* Adjust padding for wider screens */
+  }
+}

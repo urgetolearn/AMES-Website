@@ -279,4 +279,128 @@
   transition: transform 0.3s ease;
 }
 
+/* Tablet and larger phones */
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 2rem 5%;
+  }
 
+  .about-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .about-content-wrapper:nth-child(2) {
+    flex-direction: column-reverse; /* Reverses the order for the second row */
+  }
+
+  .about-text, .about-text2 {
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  .about-us-label {
+    margin: 0 auto 0.5rem auto;
+  }
+  
+  .about-us-label + div { /* Targets the orange line */
+    margin: 8px auto 16px auto !important;
+  }
+
+  .about-image img, .about-image2 img {
+    min-width: 100%;
+    height: auto;
+    margin-right: 0;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+  
+  .about-desc {
+    font-size: 1rem;
+  }
+  
+  .about-text ul {
+    text-align: left; /* Keep bullet points left-aligned */
+    margin: 0 auto;
+    max-width: 80%; /* Constrain width for readability */
+  }
+
+  .alumni-section {
+    margin: 2rem 0;
+  }
+  
+  .alumni-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 1rem 3%;
+  }
+
+  .about-content-wrapper {
+    gap: 1.5rem;
+  }
+  
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-desc, .about-text ul, .alumni-role {
+    font-size: 0.9rem;
+  }
+  
+  .about-btn {
+    width: 100%;
+  }
+
+  .alumni-grid {
+    grid-template-columns: 1fr; /* Stack alumni cards vertically */
+    gap: 15px;
+  }
+}
+/* Mobile phones (general) */
+@media (max-width: 480px) {
+  .about-section {
+    padding: 1rem;
+  }
+  .about-title {
+    font-size: 1.5rem;
+  }
+  .alumni-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* iPad Mini (Portrait) and Foldable devices */
+@media (max-width: 768px) {
+  .about-content-wrapper {
+    flex-direction: column;
+  }
+  .about-content-wrapper:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .about-image img, .about-image2 img {
+    min-width: 100%;
+  }
+  .alumni-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Surface Pro 7 and Nest Hub */
+@media (max-width: 1024px) {
+  .about-section {
+    padding: 2rem 5%;
+  }
+  .alumni-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

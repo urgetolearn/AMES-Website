@@ -24,7 +24,7 @@ const Footer = () => {
                     Department of Mechanical Engineering, NITK
                 </p>
                 <div className="social-icons">
-                    <a href="https://www.instagram.com/ames.nitk?igsh=MXN0cjlxNmN5anE5cA==" aria-label="Instagram">
+                    <a href="https://www.instagram.com/ames.nitk?igsh=MXN0cjlxNmN5anE5cA==" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="#f7842b"
@@ -35,7 +35,7 @@ const Footer = () => {
                             <path d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm10 2c1.7 0 3 1.3 3 3v10c0 1.7-1.3 3-3 3H7c-1.7 0-3-1.3-3-3V7c0-1.7 1.3-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.8-2.8a1.2 1.2 0 11-2.4 0 1.2 1.2 0 012.4 0z" />
                         </svg>
                     </a>
-                    <a href="https://www.linkedin.com/company/association-of-mechanical-engineering-students-nitk/" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/company/association-of-mechanical-engineering-students-nitk/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="#f7842b"

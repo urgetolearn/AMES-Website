@@ -124,3 +124,108 @@
     justify-content: center;
 
 }
+
+/* Tablet and larger phones */
+@media (max-width: 1024px) {
+  .footer {
+    gap: 100px;
+    padding: 30px;
+    justify-content: space-around;
+  }
+
+  .footer-left {
+    max-width: 45%;
+  }
+
+  .footer-right {
+    gap: 30px;
+  }
+
+  .zxz {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .footer-left {
+    max-width: 100%;
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .zxz {
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .footer-left p {
+    font-size: 13px;
+  }
+  
+  .footer-column h3 {
+    font-size: 15px;
+  }
+
+  .footer-column ul li a {
+    font-size: 13px;
+  }
+}
+/* Mobile phones (general) */
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .footer-left, .footer-right {
+    max-width: 100%;
+  }
+  .zxz {
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
+/* iPad Mini (Portrait) */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .footer-right {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* Surface Pro 7 (wider tablet) */
+@media (max-width: 912px) {
+  .footer {
+    gap: 50px;
+    padding: 30px;
+    justify-content: space-around;
+  }
+  .footer-left {
+    max-width: 45%;
+  }
+}
+
+/* Nest Hub */
+@media (max-width: 1024px) {
+  .footer {
+    gap: 100px;
+  }
+}

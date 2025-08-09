@@ -115,3 +115,141 @@
 #contact.footer {
   padding: 0;
 }
+/* Tablet and larger phones */
+@media (max-width: 1024px) {
+  .media-section {
+    height: 400px;
+  }
+
+  .media-image {
+    height: 400px;
+  }
+
+  .media-overlay-text {
+    top: 50%; /* Center vertically more effectively */
+  }
+  
+  .main-heading {
+    left: 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .media-overlay-text div[style] { /* Targets the orange line */
+    right: 0 !important;
+    position: static !important;
+    margin: 8px auto 16px auto !important;
+  }
+
+  .below-part {
+    left: 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .media-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .media-link1 a, .media-link2 a, .media-link3 a {
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: 5px 0;
+    display: block;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .media-section {
+    height: 350px;
+  }
+
+  .media-image {
+    height: 350px;
+  }
+
+  .main-heading {
+    font-size: 1rem;
+  }
+
+  .below-part {
+    font-size: 1.5rem;
+  }
+
+  .media-link1 a, .media-link2 a, .media-link3 a {
+    font-size: 1rem;
+  }
+}
+/* Tablet and larger phones */
+@media (max-width: 1024px) {
+  .media-section {
+    height: 400px;
+  }
+
+  .media-image {
+    height: 400px;
+  }
+
+  .media-overlay-text {
+    top: 50%;
+  }
+  
+  .main-heading {
+    left: 0;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .media-overlay-text div[style] {
+    right: 0 !important;
+    position: static !important;
+    margin: 8px auto 16px auto !important;
+  }
+
+  .below-part {
+    left: 0;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .media-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .media-link1 a, .media-link2 a, .media-link3 a {
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: 5px 0;
+    display: block;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .media-section {
+    height: 350px;
+  }
+
+  .media-image {
+    height: 350px;
+  }
+
+  .main-heading {
+    font-size: 1rem;
+  }
+
+  .below-part {
+    font-size: 1.5rem;
+  }
+
+  .media-link1 a, .media-link2 a, .media-link3 a {
+    font-size: 1rem;
+  }
+}

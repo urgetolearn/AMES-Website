@@ -232,3 +232,120 @@
     height: 230px;
   }
 }
+/* Tablet and larger phones */
+@media (max-width: 1024px) {
+  .featured-projects-nitk {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .fp-content-left, .fp-content-right {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .fp-content-right {
+    margin-top: 2rem;
+  }
+
+  .fp-header {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .fp-desc {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .fp-projects-list {
+    margin-top: 1rem;
+  }
+
+  .fp-project-title {
+    font-size: 1.2rem;
+  }
+
+  .fp-project-details {
+    font-size: 1rem;
+  }
+
+  .fp-project-image, .fp-image-placeholder {
+    height: 300px;
+    position: static;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 768px) {
+  .featured-projects-nitk {
+    padding: 1.5rem 1rem;
+  }
+
+  .fp-header {
+    font-size: 1.8rem;
+  }
+
+  .fp-desc {
+    font-size: 0.9rem;
+  }
+  
+  .fp-project-title {
+    padding: 0.8rem 0;
+    font-size: 1rem;
+  }
+
+  .fp-project-details {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+
+  .fp-read-more-btn {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  .fp-project-image, .fp-image-placeholder {
+    height: 250px;
+  }
+}
+/* Mobile phones (general) */
+@media (max-width: 480px) {
+  .featured-projects-nitk {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .fp-header {
+    font-size: 1.5rem;
+  }
+  .fp-desc {
+    font-size: 0.9rem;
+  }
+  .fp-project-image, .fp-image-placeholder {
+    height: 200px;
+  }
+}
+
+/* iPad Mini (Portrait) and Foldable devices */
+@media (max-width: 768px) {
+  .featured-projects-nitk {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .fp-content-left, .fp-content-right {
+    max-width: 100%;
+    padding: 0;
+  }
+  .fp-project-image, .fp-image-placeholder {
+    height: 300px;
+  }
+}
+
+/* Surface Pro 7 */
+@media (max-width: 912px) {
+  /* Layout remains side-by-side, but with adjusted padding/margins */
+  .featured-projects-nitk {
+    padding: 3rem 5%;
+  }
+}
