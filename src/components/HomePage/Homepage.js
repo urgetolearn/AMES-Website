@@ -108,14 +108,14 @@ const HomePage = () => {
                 border: 'none',
                 height: '2px',
                 borderTop: '2px dashed #f7842b',
-                margin: '0px 0 0px 0',
+                margin: '0px 0 0 0',
                 paddingBottom: '27px'
             }} ></hr></div>
-            <div className="footer-bottom">
-                <span className="footer-text">© {year} AMES. All rights reserved.</span>
-                <a href='#'><span className="footer-text2">Privacy Policy</span></a>
-                <a href='#'><span className="footer-text3">Terms of Service</span></a>
-                </div>
+            <ul className="footer-bottom" >
+                <li className="footer-text" >© {year} AMES. All rights reserved.</li>
+                <li className="footer-text2" ><a href='#' style={{color:'#fff',textDecoration:'none'}}>Privacy Policy</a></li>
+                <li className="footer-text3"><a href='#'style={{color:'#fff',textDecoration:'none'}}>Terms of Service</a></li>
+            </ul>
         </div>
     );
 };
