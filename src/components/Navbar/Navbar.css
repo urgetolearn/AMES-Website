@@ -38,6 +38,7 @@
 
 /* ===== Navigation Links ===== */
 .nav-links {
+  position: relative;
   list-style: none;
   display: flex;
   gap: 1rem;
@@ -53,11 +54,11 @@
   color: #2a2a2a;
 }
 .nav-links.top-links {
-  position: relative;
+  position: fixed;
   right: 7vh;
 }
 .nav-links.scrolled-links{
-  position: relative;
+  position: fixed;
   right: 7vh;
 }
 /* Text color when scrolled */
