@@ -65,7 +65,7 @@ const About = () => {
         }} />
         <h3 className="alumni-title">Our Distinguished Alumni</h3>
 
-        <div className="alumni-grid" style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}>
+        <div className="alumni-grid" >
           {alumniData.map((alumni, idx) => (
             <div
               className={`${idx === 3 ? 'special-alumni-wrapper' : 'alumni-wrapper'}`}
