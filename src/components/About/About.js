@@ -28,9 +28,9 @@ const About = () => {
           <span className="about-us-label">About Us</span>
           <div style={{ height: '3px', width: '50px', background: '#f7842b', margin: '8px 0 16px 0', borderRadius: '2px' }} />
           <h2 className="about-title">Who are we?</h2>
-          <p className="about-desc">
+          <div className="about-desc">
             AMES is a dynamic platform by and for Mechanical Engineering students at NITK. We empower each other with hands-on learning, industry insights, and lifelong connections.
-          </p>
+          </div>
           <button className="about-btn">Know More</button>
         </div>
         <div className="about-image">

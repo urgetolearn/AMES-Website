@@ -320,13 +320,12 @@
 
   .about-image2 img {
     min-width: 70vh;
-    height: auto;
     margin-right: 0;
   }
 
   .about-image img {
     min-width: 70vh;
-    height: auto;
+
     margin-right: 0;
     height: 20vh;
 
@@ -469,4 +468,39 @@
       grid-template-columns: repeat(2,1fr);
     }
   
+}
+
+@media (min-width: 3000px) and (max-width: 3840px) {
+  .about-text{
+    position: relative;
+    right: 35vh;
+  }
+  .about-title {
+    font-size: 3.5rem;
+  }
+  .about-us-label{
+    font-size: 2.5rem;
+  }
+  .about-desc{
+    width: 30vh;
+    font-size: 1.8rem;
+  }
+  .about-image{
+    position: relative;
+    left:25vh;
+  }
+  .about-btn{
+    font-size: 2.2rem;
+  }
+  .about-image2{
+    position: relative;
+    right: 35vh;
+  }
+  .about-text2{
+    position: relative;
+    right: 15vh;
+  }
+  .about-us-label{
+    margin-top: 2vh;
+  }
 }
