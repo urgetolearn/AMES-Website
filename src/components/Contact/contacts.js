@@ -15,7 +15,7 @@ const Contact = () => {
   }, []);
 
   return (
-  <div className="page1">
+    <div className="page1">
       {/* Media Section */}
       <section className="media-section">
         <div className="media-image-wrapper">
@@ -23,7 +23,8 @@ const Contact = () => {
           <div className="media-overlay"></div>
           <div className="media-overlay-text">
             <div className="main-heading">MEDIA</div>
-            <div style={{ position: 'relative', right: '621px', height: '3px', width: '50px', background: '#f7842b', margin: '8px auto 16px auto', borderRadius: '2px' }} />
+            {/* The horizontal line will be placed here now */}
+            <div className="line"></div>
             <div className="below-part">Stay Tuned and Follow Us!!</div>
             <section className="media-links">
               <div className="media-link1">
@@ -39,9 +40,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-  </div >
-
-  
+    </div>
   );
 };
 

@@ -8,7 +8,6 @@
   border-radius: 12px;
   width: 100%;
   max-width: 1800px;
-  /* Add this line */
   box-sizing: border-box;
   margin: 0 auto;
 }
@@ -66,32 +65,23 @@
   background: #d96c1a;
 }
 
-.about-image img {
-  max-width: none;
-  min-width: 10vh;
-  height: 50vh;
-  border-radius: 5px;
+/* Updated Image Styles for Fixed Size on Desktop */
+.about-image img,
+.about-image2 img {
+  width: 550px;
+  height: 350px;
   object-fit: cover;
+  min-width: initial;
+  height: auto;
+  border-radius: 5px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
   border-top-left-radius: 12px;
   border-bottom-right-radius: 12px;
-
 }
 
 .about-image2 img {
-
-  max-width: none;
-  min-width: 80vh;
-  height: 50vh;
-  border-radius: 5px;
-  object-fit: cover;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
-  border-top-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  margin-right: 40px;
-  /* Add margin to reduce from right */
+  margin-right: 100px;
 }
-
 
 .about-text ul {
   padding-left: 1.2rem;
@@ -153,7 +143,6 @@
   position: relative;
   overflow: hidden;
   transition: background-color 0.5s ease-in;
-
 }
 
 .alumni-name {
@@ -166,7 +155,6 @@
   font-size: 1.1rem;
   text-align: center;
   color: #f7842b;
-
 }
 
 .alumni-intro {
@@ -179,7 +167,6 @@
   position: relative;
   top: 30px;
 }
-
 
 .alumni-card:hover .alumni-intro {
   opacity: 1;
@@ -210,20 +197,17 @@
   text-align: left;
   position: relative;
   overflow: hidden;
-
 }
 
 .special-alumni-card:hover {
   background-color: #f7842b;
 }
 
-
 .alumni-intro.always-show {
   opacity: 1 !important;
   visibility: visible !important;
   color: #fff;
 }
-
 
 .special-alumni-name {
   background-color: #fff;
@@ -271,7 +255,6 @@
   object-fit: cover;
 }
 
-/* Show icon on hover */
 .alumni-card:hover .icon {
   opacity: 1;
 }
@@ -299,7 +282,6 @@
 
   .about-content-wrapper:nth-child(2) {
     flex-direction: column-reverse;
-    /* Reverses the order for the second row */
   }
 
   .about-text,
@@ -314,21 +296,15 @@
   }
 
   .about-us-label+div {
-    /* Targets the orange line */
     margin: 8px auto 16px auto !important;
   }
 
+  /* Updated responsive image styles */
+  .about-image img,
   .about-image2 img {
-    min-width: 70vh;
+    width: 80%;
+    height: auto;
     margin-right: 0;
-  }
-
-  .about-image img {
-    min-width: 70vh;
-
-    margin-right: 0;
-    height: 20vh;
-
   }
 
   .about-title {
@@ -341,10 +317,8 @@
 
   .about-text ul {
     text-align: left;
-    /* Keep bullet points left-aligned */
     margin: 0 auto;
     max-width: 80%;
-    /* Constrain width for readability */
   }
 
   .alumni-section {
@@ -381,44 +355,25 @@
     width: 100%;
   }
 
+  /* Updated responsive image styles */
+  .about-image img,
   .about-image2 img {
-    min-width: 15vh;
-
-    margin-right: 0;
-    height: 30vh;
-  }
-
-  .about-image img {
-    min-width: 15vh;
+    width: 100%;
     height: auto;
     margin-right: 0;
-    height: 30vh;
   }
 
-  .about-desc {
-    font-size: 1.08rem;
-    margin-bottom: 1.5rem;
-    opacity: 0.88;
-    line-height: 1.6;
+  .about-content-wrapper {
+    flex-direction: column;
   }
-    .about-content-wrapper {
-      flex-direction: column;
-    }
 
-    .about-content-wrapper:nth-child(2) {
-      flex-direction: column-reverse;
-    }
+  .about-content-wrapper:nth-child(2) {
+    flex-direction: column-reverse;
+  }
 
-    .about-image img,
-    .about-image2 img {
-      min-width: 100%;
-    }
-
-    .alumni-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-
+  .alumni-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Mobile phones (general) */
@@ -431,76 +386,23 @@
     font-size: 1.5rem;
   }
 
+  /* Updated responsive image styles */
+  .about-image img,
   .about-image2 img {
-    min-width: 15vh;
-
-    margin-right: 0;
-    height: 30vh;
-  }
-
-  .about-image img {
-    min-width: 15vh;
+    width: 100%;
     height: auto;
     margin-right: 0;
-    height: 30vh;
   }
 
-  .about-desc {
-    font-size: 1.08rem;
-    margin-bottom: 1.5rem;
-    opacity: 0.88;
-    line-height: 1.6;
+  .about-content-wrapper {
+    flex-direction: column;
   }
-    .about-content-wrapper {
-      flex-direction: column;
-    }
 
-    .about-content-wrapper:nth-child(2) {
-      flex-direction: column-reverse;
-    }
+  .about-content-wrapper:nth-child(2) {
+    flex-direction: column-reverse;
+  }
 
-    .about-image img,
-    .about-image2 img {
-      min-width: 100%;
-    }
-
-    .alumni-grid {
-      grid-template-columns: repeat(2,1fr);
-    }
-  
-}
-
-@media (min-width: 3000px) and (max-width: 3840px) {
-  .about-text{
-    position: relative;
-    right: 35vh;
-  }
-  .about-title {
-    font-size: 3.5rem;
-  }
-  .about-us-label{
-    font-size: 2.5rem;
-  }
-  .about-desc{
-    width: 30vh;
-    font-size: 1.8rem;
-  }
-  .about-image{
-    position: relative;
-    left:25vh;
-  }
-  .about-btn{
-    font-size: 2.2rem;
-  }
-  .about-image2{
-    position: relative;
-    right: 35vh;
-  }
-  .about-text2{
-    position: relative;
-    right: 15vh;
-  }
-  .about-us-label{
-    margin-top: 2vh;
+  .alumni-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
