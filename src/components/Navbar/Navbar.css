@@ -1,148 +1,99 @@
-/* ===== Navbar Base (for Laptops, 1920x1080, and larger screens) ===== */
+/* ===== Base Navbar ===== */
 .navbar {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  height: 50px;
-  background: transparent;
+  height: 65px;
+  background-color: #f8742b;
   display: flex;
-  justify-content: space-between; /* Correctly spaces the logo and links */
   align-items: center;
-  padding: 1rem 2.5rem;
+  justify-content: space-between;
+  padding: 0 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   z-index: 1000;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* ===== Navbar After Scroll ===== */
-.navbar-scrolled {
-  background: #2a2a2a;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* ===== Logo Section ===== */
-.logo-section {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.logo-img {
-  height: 40px;
+.logo-section img {
+  height: 38px;
   width: auto;
-  transition: transform 0.3s ease;
 }
 
-.logo-img:hover {
-  transform: scale(1.05);
-}
-
-/* ===== Navigation Links ===== */
+/* ===== Center Navigation ===== */
 .nav-links {
-  position: relative;
   list-style: none;
   display: flex;
-  gap: 1rem;
-  transition: color 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  flex: 1;
   margin: 0;
   padding: 0;
 }
 
-/* Text color when at the top */
-.nav-links.top-links a {
-
-
-  color: #2a2a2a;
-}
-.nav-links.top-links {
-  position: fixed;
-  right: 7vh;
-}
-.nav-links.scrolled-links{
-  position: fixed;
-  right: 7vh;
-}
-/* Text color when scrolled */
-.nav-links.scrolled-links a {
-  color: white;
-}
-
-/* General nav link styles */
-.nav-links a {
+/* ===== Links Style ===== */
+.nav-links li a {
   text-decoration: none;
-  border-bottom: none;
-  color: inherit;
-  transition: all 0.3s ease;
-}
-
-/* Hover effect for all links */
-.nav-links a:hover {
-  color: #f8742b;
+  font-weight: 1000;
+  color: #2a2a2a;
+  font-size: 1.3rem;
   transition: color 0.3s ease;
 }
 
-/* Optional: special effect for clickable buttons */
-.object:hover {
-  transform: scale(0.96);
+.nav-links li a:hover {
+  color: white;
 }
 
+/* ===== Contact Button ===== */
+.contact-button a {
+  background-color: #2a2a2a;
+  color: #f8742b;
+  font-weight: 1000;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  position: relative;
+  right:4rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
 
-  
+.contact-button a:hover {
+  background-color: white;
+  color: #2a2a2a;
+}
 
-
+/* ===== Responsive ===== */
 @media (max-width: 1024px) {
   .navbar {
     flex-wrap: wrap;
-    justify-content: center;
     height: auto;
     padding: 1rem;
   }
 
   .nav-links {
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 0.5rem;
-    margin-top: 10px;
+    gap: 1rem;
   }
 
-  .nav-links a {
-    font-size: 0.9rem;
-  }
+
 }
 
-/* ===== Mobile phones (768px and below) ===== */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 1rem;
-  }
-
-  .logo-section {
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 10px;
   }
 
   .nav-links {
     flex-direction: column;
-    width: 100%;
-    margin-top: 0;
+    gap: 1rem;
   }
 
-  .nav-links li {
-    width: 100%;
-  }
-
-  .nav-links a {
-    display: block;
-    padding: 0.5rem 0;
-    text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .nav-links a:hover {
-    background-color: #f8742b;
-    color: #2a2a2a;
-  }
+    .contact-button {
+      margin-left: 8.5rem;
+      margin-top: 1rem;
+      margin-right: 1.5rem;
+      margin-bottom: 0.5rem;
+      align-self: center;
+    }
 }
