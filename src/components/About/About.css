@@ -153,7 +153,7 @@
   padding: 6px;
   font-weight: bold;
   font-size: 1.1rem;
-  text-align: center;
+  text-align: left;
   color: #f7842b;
 }
 
@@ -163,7 +163,7 @@
   transition: opacity 0.3s ease;
   margin-top: 0.5rem;
   font-size: 0.9rem;
-  color: #666;
+  color: #ffffff;
   position: relative;
   top: 30px;
 }

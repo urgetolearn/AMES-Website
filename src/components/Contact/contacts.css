@@ -74,7 +74,7 @@
 .below-part {
   font-weight: bold;
   font-size: 2.5rem;
-  letter-spacing: 2.5px;
+  letter-spacing: 0.3px;
   margin-bottom: 12px;
   text-align: left;
   /* Use padding for positioning on larger screens */
