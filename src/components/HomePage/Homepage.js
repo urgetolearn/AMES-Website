@@ -2,7 +2,7 @@ import React from 'react';
 import About from '../About/About';
 import Contact from '../Contact/contacts';
 import './Homepage.css';
-import bannerImage from '../../assets/banner3 (2).png';
+import bannerImage from '../../assets/bg1.png';
 import visionIcon from '../../assets/vision.png';
 import Footer from '../Footer/footer';
 

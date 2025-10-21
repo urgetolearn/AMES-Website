@@ -2,16 +2,18 @@
   background-color: #2a2a2a;
   color: #ccc;
   display: flex;
-  justify-content: space-between; /* left stays left, right stays right */
-  align-items: flex-start; /* align vertically at top */
-  padding: 30px 150px ; /* enough horizontal space */
-  flex-wrap: wrap; /* allows stacking on smaller screens */
-  gap: 400px; /* small gap between columns if wrapping */
-}
+  justify-content: space-between; /* Pushes left and right to edges */
+  align-items: flex-start;
+  width: 100%;
+  padding: 30px 150px;
+  flex-wrap: wrap; 
 
+  /* REMOVE gap: 100px; */ 
+}
 /* Left Section */
 .footer-left {
-  flex: 0 0 200px; /* fixed width but still flexible */
+  flex: 0 0 200px;
+  margin-right: 0px; /* fixed width but still flexible */
 }
 
 .footer-left .zxz {
@@ -63,40 +65,42 @@
 }
 
 /* Right Section */
+/* Right Section */
 .footer-right {
-  flex: 1 1 400px; /* flexible width, stays on right */
+  flex: 0 1 auto; /* Flexible width, allows it to shrink before wrapping */
   display: flex;
-  gap: 50px;
-  flex-wrap: wrap; /* ensures right columns wrap nicely */
+  gap: 30px;
+  flex-wrap: wrap;
+  /* REMOVE margin-left: auto; */
 }
 
-.footer-column h3 {
+.footer-column1 h3 {
   font-size: 16px;
   margin-bottom: 10px;
   color: white;
 }
 
-.footer-column ul {
+.footer-column1 ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-column ul li {
+.footer-column1 ul li {
   margin-bottom: 6px;
 }
 
-.footer-column ul li a {
+.footer-column1 ul li a {
   color: #ccc;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s;
 }
 
-.footer-column ul li a:hover {
+.footer-column1 ul li a:hover {
   color: orange;
 }
 
-.footer-column p {
+.footer-column1 p {
   font-size: 14px;
   line-height: 1.4;
 }
@@ -126,17 +130,17 @@
 
 /* Small screens */
 @media (max-width: 768px) {
-  .footer {
+.footer {
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Centers content when stacked */
     text-align: center;
     padding: 20px;
     gap: 30px;
   }
 
-  .footer-left, .footer-right {
+.footer-left, .footer-right {
     flex: 1 1 100%;
-    margin-left: 0;
+    margin-left: 0; /* Override the 'margin-left: auto' from desktop */
   }
 
   .footer-right {

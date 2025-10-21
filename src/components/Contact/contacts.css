@@ -33,10 +33,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.7) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.7) 100%);
   filter: brightness(0.3);
   z-index: 1;
   pointer-events: none;
@@ -56,7 +54,8 @@
 
 .main-heading {
   font-size: 1rem;
-  margin-bottom: 0; /* Adjust margin to bring the line closer */
+  margin-bottom: 0;
+  /* Adjust margin to bring the line closer */
   text-align: left;
   /* Use padding for positioning on larger screens */
   padding-left: 200px;
@@ -67,7 +66,8 @@
   height: 3px;
   width: 50px;
   background: #f7842b;
-  margin: 8px 0 16px 200px; /* Align to the left with margin */
+  margin: 8px 0 16px 200px;
+  /* Align to the left with margin */
   border-radius: 2px;
 }
 
@@ -84,8 +84,10 @@
 .media-links {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Align links to the left */
-  padding-left: 190px; /* Align links with other text */
+  align-items: flex-start;
+  /* Align links to the left */
+  padding-left: 190px;
+  /* Align links with other text */
 }
 
 .media-link1 a,
@@ -101,6 +103,45 @@
   padding: 0;
 }
 
+.social-tag1 {
+  margin-left: 30vh;
+  margin-bottom: 2vh;
+  line-height: 1.4 ;
+}
+
+.social-tag {
+  margin-left: 30vh;
+  margin-bottom: 2vh;
+  line-height: 1.4 ;
+
+
+}
+
+.organization {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 2vh;
+  margin-left: 30vh;
+
+}
+
+.handles{
+  margin-top: 17.5vh;
+}
+
+.social-tag1 a{
+  color: #fff;
+  text-decoration: none;
+}
+.organization a{
+  color: #fff;
+  text-decoration: none;
+
+}
+.social-tag a{
+  color: #fff;
+  text-decoration: none;
+}
 /* Tablet and larger phones */
 @media (max-width: 1024px) {
   .media-section {
@@ -120,13 +161,14 @@
   .line,
   .below-part,
   .media-links {
-    padding-left: 5%; /* Use a percentage for better responsiveness */
+    padding-left: 5%;
+    /* Use a percentage for better responsiveness */
   }
 
   .main-heading {
     font-size: 1.2rem;
   }
-  
+
   .below-part {
     font-size: 2rem;
   }

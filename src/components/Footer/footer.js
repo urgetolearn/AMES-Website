@@ -52,17 +52,17 @@ const Footer = () => {
             {/* Right Section */}
             <div className="footer-right">
                 <div className="footer-column">
-                    <h3>User Link</h3>
+                   { /*<h3>User Link</h3>
                     <ul>
                         <li><a href="#">About Us</a></li>
                         <li><a href="#">Contact Us</a></li>
                         <li><a href="#">Order Delivery</a></li>
                         <li><a href="#">Payment & Tax</a></li>
                         <li><a href="#">Terms of Services</a></li>
-                    </ul>
-                </div>
+                    </ul> */}
+                </div> 
 
-                <div className="footer-column">
+                <div className="footer-column1">
                     <h3>Contact Us</h3>
                     <p>
                         Department of Mechanical Engineering, NITK,<br />

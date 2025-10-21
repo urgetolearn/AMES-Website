@@ -26,6 +26,13 @@ const Contact = () => {
             {/* The horizontal line will be placed here now */}
             <div className="line"></div>
             <div className="below-part">Stay Tuned and Follow Us!!</div>
+            <div className="media-overlay-text">
+             <div className="handles"> <div className="social-tag"> <a href="https://www.instagram.com/ames.nitk?igsh=MXN0cjlxNmN5anE5cA==" target="_blank" rel="noopener noreferrer">@ames.nitk</a></div>
+              <div className="organization"><a href="https://www.linkedin.com/company/association-of-mechanical-engineering-students-nitk/" target="_blank" rel="noopener noreferrer">
+                Association of Mechanical Engineering Students, NITK</a>
+              </div>
+              <div className="social-tag1" ><a href='https://www.youtube.com/@AMESNITK' tareget="_blank" rel="noopener noreferrer">@AMESNITK</a></div></div>
+            </div>
             <section className="media-links">
               <div className="media-link1">
                 <a href="https://www.instagram.com/ames.nitk?igsh=MXN0cjlxNmN5anE5cA==" target="_blank" rel="noopener noreferrer">
@@ -50,7 +57,7 @@ const Contact = () => {
                 </svg></a>
               </div>
               <div className="media-link3">
-                <a href="#" target="_blank" rel="noopener noreferrer"><svg
+                <a href="https://www.youtube.com/@AMESNITK" target="_blank" rel="noopener noreferrer"><svg
                   fill="#f7842b"
                   width="30"
                   height="30"
@@ -62,7 +69,7 @@ const Contact = () => {
                     fill-rule="evenodd"
                     clip-rule="evenodd"
                     d="M5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7ZM2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM10 9L14 12L10 15V9Z"
-                    
+
                   />
                 </svg></a>
               </div>

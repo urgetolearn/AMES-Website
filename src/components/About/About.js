@@ -51,7 +51,7 @@ const About = () => {
             <li>Bridge the academia-industry gap via projects & mentorship.</li>
             <li>Promote interdisciplinary research & social innovation</li>
           </ul>
-          <button className="about-btn">Explore</button>
+          <button className="about-btn" ><a href='https://mech.nitk.ac.in/' target='_blank' >Explore</a></button>
         </div>
       </div>
       <div className="alumni-section">
@@ -76,11 +76,8 @@ const About = () => {
                   {alumni.intro}
                 </div>
 
-                {alumni.instaicon && alumni.instalink && alumni.linkedinicon && alumni.linkedinlink && (
+                { alumni.linkedinicon && alumni.linkedinlink && (
                   <div className={`icon ${idx === 3 ? 'special-icon' : ''}`}>
-                    <a href={alumni.instalink} target="_blank" rel="noopener noreferrer">
-                      <img src={alumni.instaicon} alt="Instagram icon" />
-                    </a>
                     <a href={alumni.linkedinlink} target="_blank" rel="noopener noreferrer">
                       <img src={alumni.linkedinicon} alt="LinkedIn icon" />
                     </a>

@@ -20,53 +20,53 @@ const alumniData = [
     linkedinlink: "https://www.linkedin.com/in/k-ullas-karanth-486161a/"
   },
   {
-    name: "Dr. Hirebettu Sadananda Kamath",
+    name: "Aravind Melligeri",
     role: "Role/Position",
-    intro: "Dr. H. S. Kamath is a distinguished nuclear scientist with a significant career at the Department of Atomic Energy (DAE). He has made substantial contributions to India's nuclear fuel cycle, particularly in the development and manufacturing of fuels for various nuclear reactors.",
+    intro: "Aravind Melligeri is the Chairman & CEO of Aequs, a global precision manufacturing company. A co-founder of Quest Global, he is a key figure in India's aerospace and manufacturing ecosystem, having established the nation's first aerospace Special Economic Zone (SEZ).",
     instaicon: instaIcon,
     instalink: "#",
     linkedinicon: LinkedInIcon, 
-    linkedinlink: "#"
+    linkedinlink: "https://www.linkedin.com/in/aravind-melligeri-8409384/"
   },
   {
 
     intro: "Brief intro about this alumni goes here.sdgsrth sgwegsag 34t5cvb lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    name: "NAME",
+    name: "Benedict Machado",
     role: "Role/Position",
-    intro: "Brief intro about this alumni goes here.",
+    intro: "Benedict Machado is a co-founder and director of Ace Designers Limited, one of India's largest manufacturers of CNC machines. He is a key figure in the country's machine tool industry, having played a crucial role in making advanced manufacturing technology accessible.",
     instaicon: instaIcon,
     instalink: "#",
     linkedinicon: LinkedInIcon,
-    linkedinlink: "#"
+    linkedinlink: "https://www.linkedin.com/in/benedict-machado-09252014/"
   },
   {
-    name: "NAME",
+    name: "Sahil Barua",
     role: "Role/Position",
-    intro: "Brief intro about this alumni goes here.",
+    intro: "Sahil Barua is the co-founder and CEO of Delhivery, India's largest fully integrated logistics provider. He has scaled the company from a local courier service into a multi-billion dollar enterprise, transforming the e-commerce and supply chain landscape through technology.",
     instaicon: instaIcon,
     instalink: "#",
     linkedinicon: LinkedInIcon,
-    linkedinlink: "#"
+    linkedinlink: "https://www.linkedin.com/in/sahil-barua-6229764/"
   },
   {
-    name: "NAME",
+    name: "Thomas Zacharia",
     role: "Role/Position",
-    intro: "Brief intro about this alumni goes here.",
+    intro: "Dr. Thomas Zacharia is a distinguished computer scientist who served as the Director of the Oak Ridge National Laboratory (ORNL) in the USA. His leadership focused on leveraging high-performance computing to solve major scientific challenges in energy and national security.",
     instaicon: instaIcon,
     instalink: "#",
     linkedinicon: LinkedInIcon,
-    linkedinlink: "#"
+    linkedinlink: "https://www.linkedin.com/in/thomas-zacharia-3345592/"
   },
 {
-    name: "NAME",
+    name: "Shashank Avadhani",
     role: "Role/Position",
-    intro: "Brief intro about this alumni goes here.",
+    intro: "Shashank Avadhani is the co-founder and CEO of Alyve Health, a health-tech platform providing comprehensive healthcare solutions. An alumnus of XLRI Jamshedpur, he is focused on leveraging technology to make quality healthcare more accessible, affordable, and engaging for users.",
     instaicon: instaIcon,
     instalink: "#",
     linkedinicon: LinkedInIcon, 
-    linkedinlink: "#"
+    linkedinlink: "https://www.linkedin.com/in/shashank-avadhani-6262973/"
   }
 
 ];
