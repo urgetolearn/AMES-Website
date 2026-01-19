@@ -1,171 +1,190 @@
-/* Unique Container for the Detailed About Page */
-.detailed-about-container {
+/* Prefix 'as-' used for all AboutSection styles */
+
+.as-main-container {
   background-color: #2a2a2a;
   padding: 4rem 0;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
-.detailed-about-content {
+.as-content-wrapper {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
-/* Row Layouts */
-.detailed-info-row {
+.as-heading-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.as-heading-underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ff7f2a 0%, #ffb347 100%);
+  margin: 0 auto 3rem auto;
+  border-radius: 2px;
+}
+
+/* Info Cards */
+.as-cards-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-bottom: 5rem;
+}
+
+.as-info-card {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  margin-bottom: 2rem;
+  gap: 3rem;
+  width: 100%;
 }
 
-.detailed-info-row.reverse {
+.as-info-row.as-reverse {
   flex-direction: row-reverse;
 }
 
-.detailed-text-col {
-  flex: 1.5;
-  padding: 4rem 2rem;
-  max-width: 600px;
-}
-
-.centered-ames {
-  text-align: center;
-  margin: 0 auto;
-}
-
-.detailed-section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #ff7f2a;
-  margin-bottom: 1.5rem;
-}
-
-.detailed-main-text {
-  font-size: 1.1rem;
-  color: #e0e0e0;
-  line-height: 1.6;
-}
-
-.detailed-img-col {
+.as-img-column {
   flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
-.detailed-img-box {
-  width: 50vw;
+.as-media-box {
+  width: 100%;
+  max-width: 450px;
   height: 280px;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0 8px 32px rgba(255, 127, 42, 0.2);
+  background: #ededed;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
-.detailed-img-nitk { border-radius: 0 80px 80px 0; }
-.detailed-img-ames { border-radius: 80px 0 0 80px; }
+.as-text-column {
+  flex: 1.2;
+  text-align: left;
+}
+
+.as-card-sub-title {
+  font-size: 2.2rem;
+  color: #ff7f2a;
+  margin-bottom: 1.2rem;
+}
+
+.as-card-description {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
 
 /* Teams Styling */
-.teams-header-title {
-  font-size: 2.5rem;
-  color: #ff7f2a;
+.as-section-divider {
   text-align: center;
-  margin: 3rem 0;
+  margin: 4rem 0 2rem 0;
 }
 
-.teams-header-title::after {
+.as-teams-label {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.as-teams-label::after {
   content: '';
   display: block;
-  width: 60px;
-  height: 4px;
+  width: 60%;
+  height: 3px;
   background: #ff7f2a;
-  margin: 10px auto;
+  margin: 0.5rem auto;
 }
 
-.teams-main-grid, .dynamic-team-grid {
+.as-backbone-top-row {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.as-members-grid {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  justify-items: center;
-  max-width: 1100px;
-  margin: 0 auto;
+  margin-bottom: 4rem;
 }
 
-.member-info-card {
-  background: #3a3a3a;
-  border-radius: 16px;
-  padding: 2rem;
-  text-align: center;
-  width: 100%;
-  transition: transform 0.3s ease;
-  border-top: 4px solid #ff7f2a;
-}
-
-.member-info-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-
-.member-image-circle img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid #ff7f2a;
-  margin-bottom: 1rem;
-}
-
-.member-name-text { color: #ff7f2a; font-size: 1.3rem; margin-bottom: 0.5rem; }
-.member-role-text { color: #ccc; font-size: 0.9rem; }
-
-/* Admin Grid */
-.admin-custom-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.admin-custom-card {
-  background: #333;
-  padding: 1.5rem;
+.as-member-card {
+  background: #ededed;
   border-radius: 12px;
+  padding: 1.2rem;
   text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
-.admin-card-img img {
-  width: 100px;
-  height: 100px;
+.as-member-card:hover {
+  transform: translateY(-10px);
+  border-color: #ff7f2a;
+  box-shadow: 0 10px 25px rgba(247, 132, 43, 0.2);
+}
+
+.as-member-card.as-large {
+  width: 320px;
+  padding: 2rem;
+}
+
+.as-member-img-box {
+  width: 100%;
+  height: 150px;
+  background: #bbb;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
 
-.social-btn {
-  display: inline-flex;
-  margin: 0 5px;
-  padding: 8px;
-  border-radius: 50%;
-  color: white;
-  background: #444;
-  transition: 0.3s;
+.as-member-img-box.as-large {
+  height: 220px;
 }
 
-.social-btn.linkedin:hover { background: #0077b5; }
-.social-btn.github:hover { background: #333; }
-.social-btn.email:hover { background: #ff7f2a; }
+.as-member-name {
+  font-weight: 700;
+  color: #222;
+  font-size: 1.1rem;
+}
+
+.as-member-role {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Animations */
+.as-shimmer { position: relative; overflow: hidden; }
+.as-shimmer::after {
+  content: ''; position: absolute; top: 0; left: -75%; width: 50%; height: 100%;
+  background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.4) 50%, transparent 100%);
+  animation: as-shimmer-move 2.2s infinite;
+}
+
+@keyframes as-shimmer-move {
+  0% { left: -75%; } 100% { left: 125%; }
+}
+
+.as-premium-gradient {
+  background: linear-gradient(90deg, #f7842b, #ffb347, #f7842b);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: as-grad-move 3s linear infinite;
+}
+
+@keyframes as-grad-move {
+  to { background-position: 200% center; }
+}
 
 /* Responsive */
-@media (max-width: 768px) {
-  .admin-custom-grid, .dynamic-team-grid {
-    grid-template-columns: repeat(1, 1fr) !important;
-  }
-  .detailed-info-row {
-    flex-direction: column !important;
-  }
-  .detailed-img-box {
-    width: 100%;
-    border-radius: 0;
-  }
+@media (max-width: 900px) {
+  .as-info-card, .as-info-row.as-reverse { flex-direction: column !important; text-align: center; }
+  .as-members-grid { grid-template-columns: repeat(2, 1fr); }
+  .as-backbone-top-row { flex-direction: column; align-items: center; }
 }

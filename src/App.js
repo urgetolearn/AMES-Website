@@ -9,6 +9,7 @@ import Updates from './components/updates';
 import Contact from './components/Contact/contacts';
 import AboutSection from './components/About2/AboutSection-ASHUTOSH';
 import Footer from './components/Footer/footer';
+import Projectsection from './components/projectsection/ProjectsSection';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
         <Route path="/contacts" element={<Contact />} />
         {/* Add more routes if needed */}
         <Route path="/about-details" element={<AboutSection />} />
+        <Route path="/projects" element={<Projectsection />} />
+
       </Routes>
     </Router>
   );
