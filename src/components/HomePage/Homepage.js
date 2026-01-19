@@ -81,7 +81,7 @@ const HomePage = () => {
       <div className="dashed-divider"></div>
       <About />
       <Contact />
-      <footer className="footer" id="contact">
+       <footer className="footer" id="contact">
         <Footer />
       </footer>
 

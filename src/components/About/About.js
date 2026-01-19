@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './About.css';
 import aboutImage from '../../assets/about.JPG';
 import objectivesImage from '../../assets/department.png';
@@ -7,6 +8,7 @@ import instaIcon from '../../assets/instaicon.png';
 import Linkedin from '../../assets/linkedin.png'
 import EventsSection from '../Events/EventsSection';
 import Contact from '../Contact/contacts';
+import AboutSection from '../About2/AboutSection-ASHUTOSH';
 
 let scrollToAboutSection = () => { };
 
@@ -31,14 +33,18 @@ const About = () => {
           <div className="about-desc">
             AMES is a dynamic platform by and for Mechanical Engineering students at NITK. We empower each other with hands-on learning, industry insights, and lifelong connections.
           </div>
-          <button className="about-btn">Know More</button>
+          <button className="about-btn">
+            <Link to="/about-details" style={{ color: 'inherit', textDecoration: 'none' }}>
+              Know More
+            </Link>
+          </button>
         </div>
         <div className="about-image">
           <img src={aboutImage} alt="Graduation" />
         </div>
       </div>
       {/* Second Row: Objectives */}
-      <div className="about-content-wrapper"  style={{ marginTop: "2.5rem" }}>
+      <div className="about-content-wrapper" style={{ marginTop: "2.5rem" }}>
         <div className="about-image2">
           <img src={objectivesImage} alt="Classroom" />
         </div>
@@ -76,7 +82,7 @@ const About = () => {
                   {alumni.intro}
                 </div>
 
-                { alumni.linkedinicon && alumni.linkedinlink && (
+                {alumni.linkedinicon && alumni.linkedinlink && (
                   <div className={`icon ${idx === 3 ? 'special-icon' : ''}`}>
                     <a href={alumni.linkedinlink} target="_blank" rel="noopener noreferrer">
                       <img src={alumni.linkedinicon} alt="LinkedIn icon" />
@@ -97,13 +103,13 @@ const About = () => {
               )}
             </div>
 
-            
+
           ))}
         </div>
         <EventsSection />
       </div>
     </div>
-    
+
   );
 }
 
