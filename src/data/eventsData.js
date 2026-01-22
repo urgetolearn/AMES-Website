@@ -6,7 +6,7 @@ const eventsData = [
   },
   {
     title: "CADathons",
-    details: "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    details: "Master the art of 3D modeling in this high-stakes design sprint. From conceptual sketching to final rendering, CADathons test your technical precision, speed, and ability to engineer solutions for real-world manufacturing.",
     image: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=800&q=80"
   },
   {

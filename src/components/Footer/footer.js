@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import "./footer.css";
 import logo1 from '../../assets/logo3.png';
+import Logo from '../../assets/Asset19.svg';
 
 let scrollToFooterSection = () => { };
 
@@ -17,8 +18,8 @@ const Footer = () => {
         <div className="footer" ref={FooterRef}>
             {/* Left Section */}
             <div className="footer-left">
-                <div className="zxz"><img style={{ width: '90px', height: '90px' }} src="https://about.iris.nitk.ac.in/_next/image?url=https%3A%2F%2Fbackend-about.iris.nitk.ac.in%2Fuploads%2Fthumbnail_NITK_c4446c9d77_44a10f4816.png&w=640&q=75" alt="AMES Logo" className="logo" />
-                    <img src={logo1} className="ameslogo" style={{ width: '195px', height: '80px' }} /></div>
+                <div className="zxz"><img style={{ width: '180px', height: '100px' }} src={Logo} alt="AMES Logo" className="logo" />
+                    </div>
                 <p>
                     Association of Mechanical Engineering Students (AMES),<br />
                     Department of Mechanical Engineering, NITK

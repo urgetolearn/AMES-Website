@@ -10,6 +10,8 @@ import Contact from './components/Contact/contacts';
 import AboutSection from './components/About2/AboutSection-ASHUTOSH';
 import Footer from './components/Footer/footer';
 import Projectsection from './components/projectsection/ProjectsSection';
+import PrivacyPolicy from './components/pp and ts/privacypolicy';
+import TermsOfService from './components/pp and ts/termsofservice';
 
 function App() {
   return (
@@ -20,10 +22,10 @@ function App() {
         <Route path="/About" element={<About />} />
         <Route path="/updates" element={<Updates />} />
         <Route path="/contacts" element={<Contact />} />
-        {/* Add more routes if needed */}
         <Route path="/about-details" element={<AboutSection />} />
         <Route path="/projects" element={<Projectsection />} />
-
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
       </Routes>
     </Router>
   );

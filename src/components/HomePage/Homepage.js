@@ -1,14 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import About from '../About/About';
 import Contact from '../Contact/contacts';
 import './Homepage.css';
 import bannerImage from '../../assets/bg1.png';
 import visionIcon from '../../assets/vision.png';
 import Footer from '../Footer/footer';
+import useTypewriter from '../../animation/useTypwriter2';
 
 const year = new Date().getFullYear();
 
 const HomePage = () => {
+  // CORRECT: Hooks must be called inside the component function
+  const typewrite = useTypewriter(); 
   const [hoveredCard, setHoveredCard] = React.useState(null);
 
   return (
@@ -20,14 +24,13 @@ const HomePage = () => {
             <img src={bannerImage} alt="Banner" className="hero-image" />
           </div>
 
-          {/* Gradient Overlay */}
           <div className="gradient-overlay"></div>
 
-          {/* Centered Text Overlay */}
           <div className="overlay-text">
             <div className="main-title">Association of Mechanical Engineering Students (AMES)</div>
             <div className="sub-title">National Institute of Technology, Karnataka (NITK)</div>
-            <div className="moto">Connecting gears of innovation across generations</div>
+            {/* The variable is now available within the scope of the return */}
+            <div className="moto">{typewrite}</div>
           </div>
         </div>
       </section>
@@ -81,15 +84,17 @@ const HomePage = () => {
       <div className="dashed-divider"></div>
       <About />
       <Contact />
-       <footer className="footer" id="contact">
+      <footer className="footer" id="contact">
         <Footer />
       </footer>
 
       <div className="dashed-divider bottom"></div>
       <ul className="footer-bottom">
         <li className="footer-text">© {year} AMES. All rights reserved.</li>
-        <li className="footer-text2"><a href="#">Privacy Policy</a></li>
-        <li className="footer-text3"><a href="#">Terms of Service</a></li>
+        <li className="footer-text2">
+          <Link to="/privacy-policy">Privacy Policy</Link>
+        </li>
+        <li className="footer-text3"><Link to="/terms-of-service">Terms of Service</Link></li>
       </ul>
     </div>
   );

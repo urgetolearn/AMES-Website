@@ -13,7 +13,8 @@
 /* Left Section */
 .footer-left {
   flex: 0 0 200px;
-  margin-right: 0px; /* fixed width but still flexible */
+  margin-right: 0px; 
+  
 }
 
 .footer-left .zxz {
@@ -36,7 +37,7 @@
 
 .footer-left p {
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.3;
 }
 
 /* Social Icons */

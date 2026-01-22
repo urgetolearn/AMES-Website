@@ -128,22 +128,6 @@
   margin: 1rem;
 }
 
-.alumni-card {
-  background-color: #fff;
-  padding: 1rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  height: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: left;
-  position: relative;
-  overflow: hidden;
-  transition: background-color 0.5s ease-in;
-}
 
 .alumni-name {
   margin-top: 1.2rem;
@@ -164,6 +148,7 @@
   margin-top: 0.5rem;
   font-size: 0.9rem;
   color: #ffffff;
+  font-weight: 200;
   position: relative;
   top: 30px;
 }
@@ -175,12 +160,13 @@
 
 .alumni-card:hover {
   transition: background-color 0.3s ease-in;
-  background-color: #f7842b;
+  background-color: #2a2a2a;
 }
 
 .alumni-role {
   margin-top: 0.5rem;
   font-size: 1.1rem;
+  text-align: left;
 }
 
 .special-alumni-card {
@@ -232,12 +218,15 @@
   padding: 1rem;
   border-radius: 12px;
   background-color: #fff;
+  text-align: left;
   height: 320px;
   width: 100%;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
   overflow: hidden;
 }
+
+
 
 .icon {
   display: flex;
@@ -247,6 +236,7 @@
   height: 72px;
   position: relative;
   top: 30px;
+  opacity: 0;
 }
 
 .icon img {

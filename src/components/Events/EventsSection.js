@@ -57,7 +57,7 @@ const EventsSection = () => {
                   <div className="fp-project-details">
                     <div className="fp-project-description">{project.details}</div>
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/company/association-of-mechanical-engineering-students-nitk/"
                       className="fp-read-more-btn"
                       target="_blank"
                       rel="noopener noreferrer"

@@ -77,7 +77,12 @@ const About = () => {
               className={`${idx === 3 ? 'special-alumni-wrapper' : 'alumni-wrapper'}`}
               key={idx}
             >
-              <div className={`${idx === 3 ? 'special-alumni-card' : 'alumni-card'}`}>
+              <div className={`${idx === 3 ? 'special-alumni-card' : 'alumni-card'}`}
+                style={{
+                  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(${alumni.imagePath})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'center'
+                }}>
                 <div className={`alumni-intro ${idx === 3 ? 'always-show shifted-intro' : ''}`}>
                   {alumni.intro}
                 </div>
