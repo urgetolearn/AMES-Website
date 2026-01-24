@@ -14,25 +14,25 @@ const cards = [
   {
     title: 'Project 2',
     price: 'Automation of Fish Breeding Systems',
-    color: '#2a2a2a',
+    color: '#444444',
     img: '/farm.jpg',
   },
   {
     title: 'Project 3',
     price: 'Variable Gap Fish Sorting System',
-    color: '#232323',
+    color: '#f7842b',
     img: '/sort.webp',
   },
   {
     title: 'Project 4',
     price: 'Vehicle Tracking System',
-    color: '#ffb347',
+    color: '#444444',
     img: '/v.jpg',
   },
   {
     title: 'Project 5',
     price: 'NITK Lake Water Saving System',
-    color: '#444444',
+    color: '#f7842b',
     img: '/l.jpg',
   },
 ];

@@ -111,7 +111,7 @@ const About = () => {
 
           ))}
         </div>
-        <EventsSection />
+        <EventsSection /> 
       </div>
     </div>
 
